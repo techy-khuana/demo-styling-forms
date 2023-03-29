@@ -1,1 +1,104 @@
-/* developer styles go here */
+:root {
+    --cream: #e5e1db;
+    --yellow: #cfb450;
+    --grey: #6b6267;
+    --lt-grey: #d2cfd1;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inner-container {
+    padding: 0 1rem;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* ******************Header********************* */
+header {
+    background-color: var(--cream);
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+ul.menu {
+    display: none;
+}
+
+nav {
+    /* width: 100%; */
+    flex: 1 0 100%;
+}
+
+header button {
+    background-color: var(--grey);
+    border: none;
+    color: var(--cream);
+    border-radius: 4px;
+}
+
+
+/* ******************Form******************* */
+section form {
+    border: 1px solid var(--lt-grey);
+    box-shadow: 3px 3px 5px var(--lt-grey);
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+input {
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+input[id="search"] {
+    background-image: url(../img/magnifying-glass.svg);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: left 5px center;
+    padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+    border: none;
+    width: 100%;
+}
+
+input[type="email"],
+input[type="password"] {
+    border: none;
+    border-bottom: 2px solid var(--lt-grey);
+}
+
+input[type="email"]:invalid,
+input[type="password"]:invalid {
+    outline: 1px solid tomato;
+}
+
+input[type="email"]:valid,
+input[type="password"]:valid {
+    outline: 1px solid green;
+}
+
+input[type="submit"] {
+    background-color: var(--yellow);
+    color: var(--cream);
+    border: none;
+    text-transform: uppercase;
+    border: 2px solid var(--yellow);
+}
+
+input[type="submit"]:hover {
+    background-color: #fff;
+    color: var(--grey);
+}
+
+label {
+    display: block;
+}
+
+form div { 
+    margin-bottom: 1rem;
+}
